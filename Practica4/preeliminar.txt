@@ -1,0 +1,23 @@
+dsolve(luce(X),[],D).
+dsolve(A=luce(X),D1=[],D2=D):-clause(A=luce(X),B=dedo(X),magia(activada),
+dsolve(B,D1=[],D2).
+clause(A=luce(X),B) luce(X) :- dedo(X),magia(activada).
+B=dedo(X),magia(activada).
+
+dsolve(B=dedo(X),magia(activada),D1=[],D2=D)
+dsolve((A=dedo(X),B=magia(activada)),D1=[],D2=D):-!,dsolve(A=dedo(X),D1=[],D3),
+dsolve(B=magia(activada),D3,D2=D).
+
+dsolve(A=dedo(X),D1=[],D2=D3):-clause(A,B),dsolve(B,D1,D2).
+clause(A=dedo(X),B) dedo(indice):-magia(activada).
+dsolve(magia(activada),D1=[],D3=D2):-delay(magia(activada).
+
+delay(magia(activada)) :- true.
+
+dsolve(B=magia(activada),[magia(activada)],D2):-delay(magia_activada).
+delay(magia(activada)) :- true.
+
+
+dsolve(true,_,[magia(activada),[magia(activada)].
+
+dsolve(true,[magia(activada),magia(activada)],[magia(activada),magia(activada)].
